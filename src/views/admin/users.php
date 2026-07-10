@@ -1,0 +1,1 @@
+<h3>Kelola User</h3><table class="table"><thead><tr><th>Nama</th><th>Email</th><th>Role</th><th>Status Seller</th></tr></thead><tbody><?php while($u=mysqli_fetch_assoc($users)): ?><tr><td><?=e($u['name'])?></td><td><?=e($u['email'])?></td><td><?=e($u['role'])?></td><td><?=e($u['seller_status'])?></td></tr><?php endwhile; ?></tbody></table>
